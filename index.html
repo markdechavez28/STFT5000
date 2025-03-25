@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFTF5000 Database - Download Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #ff8c00;
+            color: white;
+            padding: 15px 25px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .download-btn:hover {
+            background: #e07b00;
+        }
+        .author {
+            margin-top: 20px;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to SFTF5000</h1>
+        <p>
+            SFTF5000 is a unique dataset that contains 5,000+ audio files converted to Short-Time Fourier Transform (STFT) representations. 
+            This dataset is designed for researchers, data scientists, and AI enthusiasts working on signal processing, deep learning, and audio analysis.
+        </p>
+        <p>
+            This dataset is securely hosted on <span class="highlight">Amazon AWS S3</span> for fast and reliable access.
+        </p>
+        <p>
+            Click the buttons below to download the dataset directly from <span class="highlight">AWS S3</span>.
+        </p>
+        <a href="https://stft5000-0.s3.ap-southeast-1.amazonaws.com/stft.zip" class="download-btn">Download SFTF5000 Dataset</a>
+        <a href="https://stft5000-0.s3.ap-southeast-1.amazonaws.com/stft_cleaned.zip" class="download-btn">Download SFTF5000 (Normalized) Dataset</a>
+        <p class="author">Mark Jerome De Chavez, March 2025</p>
+    </div>
+</body>
+</html>
